@@ -37,7 +37,10 @@ module.exports = {
       exposes: {
         "./AppTwoComponent": "./src/App",
       },
-      shared: ["react", "react-dom"],
+      shared: {
+        react: "^17.0.2",
+        "react-dom": "^17.0.2",
+      },
     }),
   ],
 };

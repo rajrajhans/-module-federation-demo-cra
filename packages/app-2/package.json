@@ -6,7 +6,7 @@
   "author": "rajrajhans",
   "license": "MIT",
   "scripts": {
-    "start": "serve dist -p 3002",
+    "start": "concurrently \"webpack --watch\" \"serve dist -p 3002\"",
     "build": "webpack --mode production",
     "dev": "concurrently \"webpack --watch\" \"serve dist -p 3002\""
   },
